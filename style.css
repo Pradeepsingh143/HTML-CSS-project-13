@@ -11,6 +11,11 @@
     display: flex;
 }
 
+.flex-col{
+    display: flex;
+    flex-direction:column ;
+}
+
 .container{
     max-width: 1280px;
     margin: auto;
@@ -59,14 +64,14 @@
     letter-spacing: 1px;
 }
 
+.mobile-menu{
+    display: none;
+}
 /* hero-container */
 .hero-section{
     margin-top: -70px;
 }
 
-.hero-container{
-
-}
 /* left-col */
 .left-col{
     width: 35%;
@@ -76,12 +81,11 @@
 .right-col{
     width: 65%;
     position: relative;
-    margin-left: 50px;
 }
 
 /* left-col */
 .left-col > img{
-    min-width: 30%;
+    width: 30%;
     height: 680px;
     position: fixed;
     object-fit: cover;
@@ -97,7 +101,7 @@
 .top-heading > h1{
     position:absolute;
     top: 80px;
-    left: 30px;
+    left: 0px;
     font-size: 150px;
     line-height: 130px;
     letter-spacing: 4px;
@@ -107,7 +111,7 @@
 
 .top-heading > h1 > span{
     position: relative;
-    left: 100px;
+    left: 70px;
     color: black;
 }
 
@@ -166,6 +170,7 @@
 }
 
 .timeline > ul{
+    justify-content: center;
    list-style: none;
    margin-top: 0;
 }
